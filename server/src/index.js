@@ -15,6 +15,7 @@ const server = new ApolloServer({
     launchAPI: new LaunchAPI(),
     userAPI: new UserAPI({ store }),
   }),
+  mocks: true,
 });
 
 server.listen().then(() => {
